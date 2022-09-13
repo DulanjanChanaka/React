@@ -1,7 +1,33 @@
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Greet from './components/Greet';
+import Welcome from './components/welcome';
+import FunctionClick from './components/FunctionClick'
+import ClassClick from './components/ClassClick'
+import EventBind from './components/EventBind';
 
-function App() {
+
+class App extends Component {
+render() {
+  return (
+    <div className="App">
+      {/*<Greet name="Bruce"/>}
+      {<Greet name="Clark"/>}
+  {<Welcome />
+      <Greet name="Diana" heroName='Wonder Woman'/>*/}
+      {/*<FunctionClick/>
+      <ClassClick/>*/}
+      <EventBind/>
+      
+    </div>
+  );
+}
+} 
+
+export default App;
+
+/*function App() {
   return (
     <div className="App">
       <header className="App-header">
@@ -20,6 +46,16 @@ function App() {
       </header>
     </div>
   );
-}
+}*/
 
-export default App;
+
+/*class App extends component {
+  render(){
+    return (
+      <div className="App">
+        <EventBind/>
+
+      </div>
+    )
+  }
+}*/
